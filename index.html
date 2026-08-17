@@ -1,1 +1,165 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lei Tzu-Yi</title></head><body><main><h1>Lei Tzu-Yi</h1><p>Portfolio bootstrap in progress.</p></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lei Tzu-Yi — CS student building operating systems, runtimes, networking, databases, software quality tooling, and practical AI from first principles.">
+  <meta name="theme-color" content="#0a0f16">
+  <meta property="og:title" content="Lei Tzu-Yi | Systems & AI Builder">
+  <meta property="og:description" content="From-scratch systems engineering, software quality, and practical AI.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lei-tzuy.github.io/">
+  <title>Lei Tzu-Yi | Systems & AI Builder</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230a0f16%22/><text x=%2250%22 y=%2264%22 text-anchor=%22middle%22 font-size=%2248%22 font-family=%22monospace%22 fill=%22%236ee7b7%22>LZ</text></svg>">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Back to top"><span class="brand-mark">LZ</span><span>Lei Tzu-Yi</span></a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#approach">Approach</a>
+      <a href="#about">About</a>
+      <a class="nav-github" href="https://github.com/Lei-TzuY" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> CS student · systems & AI</p>
+        <h1>I build the parts<br><span>people usually import.</span></h1>
+        <p class="hero-lede">Operating systems, container runtimes, networking, databases, software quality tooling, and AI foundations — built from first principles, then tested until the interesting failures show up.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore engineering</a>
+          <a class="button button-ghost" href="https://github.com/Lei-TzuY" target="_blank" rel="noreferrer">View GitHub ↗</a>
+        </div>
+        <div class="signal-row" aria-label="Engineering focus">
+          <span>C</span><span>Go</span><span>Python</span><span>Linux</span><span>Testing</span>
+        </div>
+      </div>
+
+      <div class="terminal reveal" aria-label="Current engineering focus">
+        <div class="terminal-bar"><span></span><span></span><span></span><code>lei@systems:~</code></div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> focus --now</p>
+          <p class="output">operating systems</p>
+          <p class="output">container runtimes</p>
+          <p class="output">networking & storage</p>
+          <p class="output">software quality</p>
+          <p class="output">AI fundamentals</p>
+          <p><span class="prompt">$</span> principle</p>
+          <p class="output accent">evidence &gt; feature lists</p>
+          <p><span class="prompt">$</span> ship --when</p>
+          <p class="output">tests_pass && limits_documented<span class="cursor">_</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section shell">
+      <div class="section-heading reveal">
+        <p class="kicker">01 / Featured engineering</p>
+        <h2>Core systems, built close to the metal.</h2>
+        <p>Projects selected for technical depth, not quantity.</p>
+      </div>
+
+      <div class="project-grid">
+        <a class="project-card project-card-wide reveal" href="https://github.com/Lei-TzuY/minios-x86" target="_blank" rel="noreferrer">
+          <div class="project-top"><span class="project-index">01</span><span class="project-arrow">↗</span></div>
+          <h3>miniOS</h3>
+          <p>A bootable 32-bit x86 operating system in C and assembly: ring-3 userspace, preemptive scheduling, virtual memory, copy-on-write fork, VFS, filesystems, IPC, signals, and QEMU-based end-to-end testing.</p>
+          <div class="tags"><span>C</span><span>x86</span><span>Kernel</span><span>QEMU</span><span>Testing</span></div>
+        </a>
+
+        <a class="project-card reveal" href="https://github.com/Lei-TzuY/mini-container-runtime" target="_blank" rel="noreferrer">
+          <div class="project-top"><span class="project-index">02</span><span class="project-arrow">↗</span></div>
+          <h3>Mini Container Runtime</h3>
+          <p>An educational Linux runtime built directly on namespaces, cgroups v2, OverlayFS, OCI images, veth networking, capabilities, and seccomp.</p>
+          <div class="tags"><span>Go</span><span>Linux</span><span>OCI</span><span>cgroups</span></div>
+        </a>
+
+        <a class="project-card reveal" href="https://github.com/Lei-TzuY/userspace-tcpip-stack" target="_blank" rel="noreferrer">
+          <div class="project-top"><span class="project-index">03</span><span class="project-arrow">↗</span></div>
+          <h3>Userspace TCP/IP Stack</h3>
+          <p>A portable packet-processing and protocol project in C with PCAP workflows, sanitizers, edge-case validation, and fuzzing-oriented tests.</p>
+          <div class="tags"><span>C</span><span>TCP/IP</span><span>PCAP</span><span>Fuzzing</span></div>
+        </a>
+
+        <a class="project-card reveal" href="https://github.com/Lei-TzuY/tinydb-c" target="_blank" rel="noreferrer">
+          <div class="project-top"><span class="project-index">04</span><span class="project-arrow">↗</span></div>
+          <h3>tinydb-c</h3>
+          <p>An educational relational database engine with B+ tree storage, secondary indexes, WAL recovery, transactions, query execution, and inspection tooling.</p>
+          <div class="tags"><span>C</span><span>B+ tree</span><span>WAL</span><span>Database</span></div>
+        </a>
+
+        <a class="project-card reveal" href="https://github.com/Lei-TzuY/tiny-transformer-autograd" target="_blank" rel="noreferrer">
+          <div class="project-top"><span class="project-index">05</span><span class="project-arrow">↗</span></div>
+          <h3>Tiny Transformer + Autograd</h3>
+          <p>A reverse-mode automatic differentiation engine and Transformer stack written from scratch, backed by numerical, regression, and integration tests.</p>
+          <div class="tags"><span>Python</span><span>Autograd</span><span>Transformer</span><span>Numerics</span></div>
+        </a>
+
+        <a class="project-card reveal" href="https://github.com/Lei-TzuY/candy_detect" target="_blank" rel="noreferrer">
+          <div class="project-top"><span class="project-index">06</span><span class="project-arrow">↗</span></div>
+          <h3>Candy Defect Detection</h3>
+          <p>A visual-inspection prototype covering YOLO inference, multi-camera capture, recording, annotation support, model workflow, and reporting.</p>
+          <div class="tags"><span>Python</span><span>YOLO</span><span>CV</span><span>Inspection</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section shell secondary-work">
+      <div class="section-heading reveal">
+        <p class="kicker">02 / AI & research</p>
+        <h2>Applied systems beyond the core stack.</h2>
+      </div>
+      <div class="compact-grid">
+        <a class="compact-card reveal" href="https://github.com/Lei-TzuY/change-clothes" target="_blank" rel="noreferrer">
+          <div><span class="compact-label">Applied AI</span><h3>Picture Magician</h3></div>
+          <p>Flask + ComfyUI image-generation and editing workflows with application-level integration.</p><span class="project-arrow">↗</span>
+        </a>
+        <a class="compact-card reveal" href="https://github.com/Lei-TzuY/Quality_Assurance" target="_blank" rel="noreferrer">
+          <div><span class="compact-label">Research artifact</span><h3>Intelligent Software Quality Assurance</h3></div>
+          <p>An executable prototype connecting quality models, runtime telemetry, traceability, and quantitative scoring.</p><span class="project-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="approach" class="section shell">
+      <div class="section-heading reveal">
+        <p class="kicker">03 / Engineering approach</p>
+        <h2>Build to understand. Test to believe.</h2>
+      </div>
+      <div class="principles-grid">
+        <article class="principle reveal"><span>01</span><h3>First principles</h3><p>I like projects where abstractions can be peeled back: kernels, runtimes, storage engines, protocols, compilers, and learning systems.</p></article>
+        <article class="principle reveal"><span>02</span><h3>Evidence over claims</h3><p>Reproducible builds, automated tests, CI, mutation testing, numerical checks, and failure analysis matter more than long feature lists.</p></article>
+        <article class="principle reveal"><span>03</span><h3>Document the edges</h3><p>A useful engineering artifact should explain what works, how it was validated, and where its limits still are.</p></article>
+      </div>
+    </section>
+
+    <section id="about" class="section shell about">
+      <div class="about-card reveal">
+        <div class="about-identity">
+          <img src="https://avatars.githubusercontent.com/u/52287354?v=4" alt="Lei Tzu-Yi's GitHub avatar" width="112" height="112">
+          <div><p class="kicker">04 / About</p><h2>Lei Tzu-Yi</h2><p class="muted">CS student · Taiwan</p></div>
+        </div>
+        <div class="about-copy">
+          <p>I am interested in systems software, software quality, and practical AI. Most of my favorite projects start with a question like “what happens underneath this abstraction?” and end with tests, tooling, and a much longer bug list.</p>
+          <p>Right now I am especially focused on operating systems, container runtimes, networking, databases, reliability, and AI systems that have to survive real inputs instead of only happy-path demos.</p>
+          <div class="about-links"><a href="https://github.com/Lei-TzuY" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#work">Selected work ↑</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <p>© <span id="year"></span> Lei Tzu-Yi. Built as a static site, because not everything needs a framework.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
