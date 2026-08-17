@@ -1,3 +1,29 @@
+const nav = document.querySelector('.nav');
+if (nav && !nav.querySelector('a[href="cv.html"]')) {
+  const cvLink = document.createElement('a');
+  cvLink.href = 'cv.html';
+  cvLink.textContent = 'CV';
+  const githubLink = nav.querySelector('.nav-github');
+  nav.insertBefore(cvLink, githubLink || null);
+}
+
+const heroActions = document.querySelector('.hero-actions');
+if (heroActions && !heroActions.querySelector('a[href="cv.html"]')) {
+  const cvButton = document.createElement('a');
+  cvButton.className = 'button button-ghost';
+  cvButton.href = 'cv.html';
+  cvButton.textContent = 'View academic CV';
+  heroActions.appendChild(cvButton);
+}
+
+const aboutLinks = document.querySelector('.about-links');
+if (aboutLinks && !aboutLinks.querySelector('a[href="cv.html"]')) {
+  const cvLink = document.createElement('a');
+  cvLink.href = 'cv.html';
+  cvLink.textContent = 'Academic CV →';
+  aboutLinks.appendChild(cvLink);
+}
+
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
 
