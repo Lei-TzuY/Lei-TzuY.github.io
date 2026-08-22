@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Lei Tzu-Yi — CS student building operating systems, runtimes, networking, databases, software quality tooling, and practical AI from first principles.">
+  <meta name="description" content="Lei Tzu-Yi — CS student building operating systems, Linux runtimes, networking, browser engines, version control, and machine-learning foundations from first principles.">
   <meta name="theme-color" content="#0a0f16">
   <meta property="og:title" content="Lei Tzu-Yi | Systems & AI Builder">
   <meta property="og:description" content="From-scratch systems engineering, software quality, and practical AI.">
@@ -32,7 +32,7 @@
       <div class="hero-copy reveal">
         <p class="eyebrow"><span class="status-dot"></span> CS student · systems & AI</p>
         <h1>I build the parts<br><span>people usually import.</span></h1>
-        <p class="hero-lede">Operating systems, container runtimes, networking, databases, software quality tooling, and AI foundations — built from first principles, then tested until the interesting failures show up.</p>
+        <p class="hero-lede">Operating systems, Linux runtimes, networking, browser engines, version control, and ML foundations — built from first principles, then tested until the interesting failures show up.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#work">Explore engineering</a>
           <a class="button button-ghost" href="https://github.com/Lei-TzuY" target="_blank" rel="noreferrer">View GitHub ↗</a>
@@ -48,7 +48,8 @@
           <p><span class="prompt">$</span> focus --now</p>
           <p class="output">operating systems</p>
           <p class="output">container runtimes</p>
-          <p class="output">networking & storage</p>
+          <p class="output">networking & browsers</p>
+          <p class="output">version control</p>
           <p class="output">software quality</p>
           <p class="output">AI fundamentals</p>
           <p><span class="prompt">$</span> principle</p>
@@ -88,11 +89,11 @@
           <div class="tags"><span>C</span><span>TCP/IP</span><span>PCAP</span><span>Fuzzing</span></div>
         </a>
 
-        <a class="project-card reveal" href="https://github.com/Lei-TzuY/tinydb-c" target="_blank" rel="noreferrer">
+        <a class="project-card reveal" href="https://github.com/Lei-TzuY/toy-browser-engine" target="_blank" rel="noreferrer">
           <div class="project-top"><span class="project-index">04</span><span class="project-arrow">↗</span></div>
-          <h3>tinydb-c</h3>
-          <p>An educational relational database engine with B+ tree storage, secondary indexes, WAL recovery, transactions, query execution, and inspection tooling.</p>
-          <div class="tags"><span>C</span><span>B+ tree</span><span>WAL</span><span>Database</span></div>
+          <h3>Toy Browser Engine</h3>
+          <p>A Rust rendering engine spanning HTML and CSS parsing, cascade, layout, painting, DOM events, scripting, fetch, timers, and deterministic integration tests.</p>
+          <div class="tags"><span>Rust</span><span>Layout</span><span>DOM</span><span>Testing</span></div>
         </a>
 
         <a class="project-card reveal" href="https://github.com/Lei-TzuY/tiny-transformer-autograd" target="_blank" rel="noreferrer">
@@ -102,11 +103,11 @@
           <div class="tags"><span>Python</span><span>Autograd</span><span>Transformer</span><span>Numerics</span></div>
         </a>
 
-        <a class="project-card reveal" href="https://github.com/Lei-TzuY/candy_detect" target="_blank" rel="noreferrer">
+        <a class="project-card reveal" href="https://github.com/Lei-TzuY/pygit-sha256" target="_blank" rel="noreferrer">
           <div class="project-top"><span class="project-index">06</span><span class="project-arrow">↗</span></div>
-          <h3>Candy Defect Detection</h3>
-          <p>A visual-inspection prototype covering YOLO inference, multi-camera capture, recording, annotation support, model workflow, and reporting.</p>
-          <div class="tags"><span>Python</span><span>YOLO</span><span>CV</span><span>Inspection</span></div>
+          <h3>pygit</h3>
+          <p>A SHA-256 version-control implementation covering content-addressed objects, refs, the index and worktree, history, packs, and remote workflows.</p>
+          <div class="tags"><span>Python</span><span>Git</span><span>SHA-256</span><span>CI</span></div>
         </a>
       </div>
     </section>
@@ -117,6 +118,14 @@
         <h2>Applied systems beyond the core stack.</h2>
       </div>
       <div class="compact-grid">
+        <a class="compact-card reveal" href="https://github.com/Lei-TzuY/tinydb-c" target="_blank" rel="noreferrer">
+          <div><span class="compact-label">Storage systems</span><h3>TinyDB</h3></div>
+          <p>A compact SQL database in C with B+ tree storage, WAL recovery, transactions, indexes, query execution, and cross-platform CI.</p><span class="project-arrow">↗</span>
+        </a>
+        <a class="compact-card reveal" href="https://github.com/Lei-TzuY/candy_detect" target="_blank" rel="noreferrer">
+          <div><span class="compact-label">Applied vision</span><h3>Candy Defect Detection</h3></div>
+          <p>A multi-camera YOLO inspection workflow for capture, inference, recording, annotation, and reporting; reproducible evaluation remains the next milestone.</p><span class="project-arrow">↗</span>
+        </a>
         <a class="compact-card reveal" href="https://github.com/Lei-TzuY/change-clothes" target="_blank" rel="noreferrer">
           <div><span class="compact-label">Applied AI</span><h3>Picture Magician</h3></div>
           <p>Flask + ComfyUI image-generation and editing workflows with application-level integration.</p><span class="project-arrow">↗</span>
@@ -148,7 +157,7 @@
         </div>
         <div class="about-copy">
           <p>I am interested in systems software, software quality, and practical AI. Most of my favorite projects start with a question like “what happens underneath this abstraction?” and end with tests, tooling, and a much longer bug list.</p>
-          <p>Right now I am especially focused on operating systems, container runtimes, networking, databases, reliability, and AI systems that have to survive real inputs instead of only happy-path demos.</p>
+          <p>Right now I am especially focused on operating systems, Linux runtimes, networking, browser internals, version control, reliability, and AI systems that have to survive real inputs instead of only happy-path demos.</p>
           <div class="about-links"><a href="https://github.com/Lei-TzuY" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#work">Selected work ↑</a></div>
         </div>
       </div>
